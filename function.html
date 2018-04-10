@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    用户名:<input id="username"> 密码:
+    <input id="password">
+    <button onclick="return sub()">登陆</button>
+    <script language="JavaScript">
+        function sub() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username != "123" || password != "123") {
+                document.getElementById("username").value = "";
+                document.getElementById("password").value = "";
+                alert("账号或密码错误");
+
+            } else {
+                alert("登陆成功");
+            }
+
+        }
+    </script>
+</body>
+
+</html>
